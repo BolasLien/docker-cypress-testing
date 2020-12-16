@@ -1,0 +1,21 @@
+{
+  "name": "docker-cypress-testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build":"docker run --name cypress-testing -it -v %cd%:/e2e -w /e2e cypress/included:6.1.0 ",
+    "test" : "docker start cypress-testing -a"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BolasLien/docker-cypress-testing.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BolasLien/docker-cypress-testing/issues"
+  },
+  "homepage": "https://github.com/BolasLien/docker-cypress-testing#readme"
+}
